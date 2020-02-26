@@ -14,17 +14,19 @@
     <div class="container">
         <nav class="d-flex">
             <div class="menu d-flex">
-                <li>SERVICES</li>
-                <li>WORK</li>
-                <li>THE TEAM</li>
+                <li class="home_s" data-ancla="home">HOME</li>
+                <li class="services_s" data-ancla="services">SERVICES</li>
+                <li class="work_s" data-ancla="work">WORK</li>
+                <li class="projets_s" data-ancla="projets">PROJECTS</li>
             </div>
             <div class="log d-flex">
                 <img class="logo" src="assets/images/logo.png" alt="">
             </div>
         </nav>
-        <section>
+        <section id="home">
             <div class="content-div d-flex">
-                <img src="assets/images/bg-home.jpg" alt="" class="">
+                <img src="assets/images/bg-home.jpg" alt="" class="home-desk">
+                <img src="assets/images/bg-home-mobile.png" alt="" class="home-mobile">
                 <div class="text-title d-flex width-div post-absolute color-white">
                     <h3>YOU JUST FOUND AN UNTILMATE</h3>
                     <h1>WE ARE APPLOVE FROM HEART</h1>
@@ -33,7 +35,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="services">
             <div class="content-div d-flex cont-services" style="background-color: #f17c72;padding: 3%;">
                 <div class="text-title d-flex width-div services color-white">
                     <h2>SERVICES</h2>
@@ -41,21 +43,21 @@
                 </div>
                 <div class="d-flex" style="justify-content: space-evenly;">
                     <div class="icon-serv color-white">
-                        <img src="assets/images/services-1.png" alt="">
+                        <img src="assets/images/services-1.png" alt="" class="img-services">
                         <h4>USER INTERFACE DESIGN</h4>
                         <p>Wireframing</p>
                         <p>Prototyping</p>
                         <p>Usability testing</p>
                     </div>
                     <div class="icon-serv color-white">
-                        <img src="assets/images/services-2.png" alt="">
+                        <img src="assets/images/services-2.png" alt="" class="img-services">
                         <h4>CONCEPT AND IDEAS</h4>
                         <p>Conceptualization</p>
                         <p>Digital Branding</p>
                         <p>Product Strategy</p>
                     </div>
                     <div class="icon-serv color-white">
-                        <img src="assets/images/services-3.png" alt="">
+                        <img src="assets/images/services-3.png" alt="" class="img-services">
                         <h4>DESIGN AND Branding</h4>
                         <p>Interaction Design</p>
                         <p>Graphic Design</p>
@@ -64,14 +66,15 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="content-div d-flex cont-services" style="padding: 3%;">
-                <div class="text-title d-flex width-div services" style="color: black;">
+        <section id="work">
+            <div class="content-div d-flex cont-work" style="padding: 3%;">
+                <div class="text-title d-flex width-div services" style="color: black;padding-bottom: 10%;">
                     <h2>WORK</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, culpa repudiandae. Nulla, tempora officiis cumque eaque enim recusandae repellat ab libero, cum corrupti adipisci optio ad. Ab aut suscipit minima!</p>
                     <img src="assets/images/hero.png" alt="">
                 </div>
-                <div class="d-flex icons-services" style="justify-content: space-evenly;">
+                <div id="projets" class="d-flex icons-services work" style="justify-content: space-evenly;">
+                    <h2>PROYECTS</h2>
                     <div class="icon-serv job">
                         <img src="assets/images/work-1.jpg" alt="">
                         <h4>NOMBRE DEL PROYECTO</h4>
@@ -86,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex icons-services" style="justify-content: space-evenly;">
+                <div class="d-flex icons-services work" style="justify-content: space-evenly;">
                     <div class="icon-serv job">
                         <img src="assets/images/work-4.jpg" alt="">
                         <h4>NOMBRE DEL PROYECTO</h4>
@@ -101,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex icons-services" style="justify-content: space-evenly;">
+                <div class="d-flex icons-services work" style="justify-content: space-evenly;">
                     <div class="icon-serv job">
                         <img src="assets/images/work-7.jpg" alt="">
                         <h4>NOMBRE DEL PROYECTO</h4>
@@ -116,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex icons-services" style="justify-content: space-evenly;">
+                <div class="d-flex icons-services work" style="justify-content: space-evenly;">
                     <div class="icon-serv job">
                         <img src="assets/images/work-10.jpg" alt="">
                         <h4>NOMBRE DEL PROYECTO</h4>
@@ -139,10 +142,8 @@
         <p class="color-white">©Copyright</p>
     </footer>
 
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

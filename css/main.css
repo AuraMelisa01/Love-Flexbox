@@ -58,6 +58,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .btn-view {
@@ -90,10 +91,10 @@ p {
 
 .icon-serv {
     width: 15%;
-    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .icon-serv p {
@@ -123,4 +124,36 @@ footer {
     background-color: #34495E;
     padding: 5%;
     justify-content: center;
+}
+
+.home-mobile {
+    display: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .menu {
+        width: 100%;
+    }
+    .home-mobile {
+        display: block;
+    }
+    .home-desk {
+        display: none;
+    }
+    .icon-serv,
+    .cont-work .d-flex.work .icon-serv.job {
+        width: 100%!important;
+    }
+    .cont-services .d-flex {
+        flex-wrap: wrap;
+    }
+    .cont-services .d-flex .icon-serv img {
+        width: 50%;
+    }
+    .cont-services .d-flex .icon-serv {
+        margin-bottom: 10%;
+    }
+    .cont-work .d-flex.work {
+        display: contents;
+    }
 }
