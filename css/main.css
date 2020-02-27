@@ -65,12 +65,11 @@ img {
 }
 
 .text-title {
-    top: 0;
-    bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    align-self: center;
 }
 
 .btn-view {
@@ -146,6 +145,11 @@ footer {
 #work .content-div,
 #projects .icon-serv.job {
     padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#home {
+    padding-top: 5%;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -176,5 +180,8 @@ footer {
     }
     .nav .d-flex {
         margin: 0;
+    }
+    .content-div {
+        position: static;
     }
 }
